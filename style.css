@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: "Arial-MT", sans-serif;
+}
+
+.header__wrapper {
+    max-width: 1500px;
+    gap: 10px 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    padding: 0 20px;
+}
+
+.input__wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.input {
+    flex-grow: 1;
+    height: 45px;
+}
+
+.button {
+    padding: 15px;
+    background-color: hsla(88, 100%, 25%, 1);
+    border-radius: 0 6px 6px 0;
+}
+
+.button__cart:hover,
+.button:hover {
+    background-color: rgb(84, 156, 2);
+}
+
+.button__cart {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: hsla(88, 100%, 25%, 1);
+    padding: 15px 16px;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button__img_cart {
+    margin-left: 8px;
+}
+
+.breadcrumb__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb__list {
+    display: flex;
+    list-style: none;
+    gap: 10px 30px;
+    font-size: 18px;
+    color: rgb(51, 50, 50);
+   
+}
+
+.breadcrumb__list li.breadcrumb__list_item + li.breadcrumb__list_item::before {
+    content: "/";
+}
+
+.breadcrumb__list li.atribute a{
+    color: rgb(59, 158, 84);
+} 
+
+.breadcrumb__list li.atribute::after {
+    content: "x";
+    color: red;
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.banner__wrapper {
+    background-image: url("./images/blueberry-hero.webp");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+align-items: flex-end;
+    justify-content: center;
+}
+
+.banner__text_wrapper {
+    max-width: 1500px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 20px ;
+}
+
+.tittle__header {
+    color: white;
+
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 26px;
+}
+.parahraph {
+    color: white;
+    line-height: 24px;
+    max-width: 430px;
+    margin: 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    max-width: 1500px;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    .footer__wrapper {
+        flex-direction: column;
+    }
+}
+
+.column1,
+.column2,
+.column3,
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 15px;
+}
+
+.logo__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tittle__footer {
+    margin: 0;
+}
+
+.anchor__footer {
+    color: rgb(68, 126, 3);
+text-decoration: none;
